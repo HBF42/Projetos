@@ -64,7 +64,13 @@ public class Login extends javax.swing.JFrame {
 
         jLabel2.setText("Senha:");
 
+        Campo2.setToolTipText("");
         Campo2.setName("Campo2"); // NOI18N
+        Campo2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Campo2ActionPerformed(evt);
+            }
+        });
 
         Campo1.setName(""); // NOI18N
         Campo1.addActionListener(new java.awt.event.ActionListener() {
@@ -120,7 +126,7 @@ public class Login extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        Usuarios frmUsuario = new Usuarios();
+        FrmUsuarios frmUsuario = new FrmUsuarios();
         frmUsuario.setVisible(true);
     }//GEN-LAST:event_jButton3ActionPerformed
 
@@ -148,6 +154,10 @@ public class Login extends javax.swing.JFrame {
     private void Campo1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Campo1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_Campo1ActionPerformed
+
+    private void Campo2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Campo2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Campo2ActionPerformed
 
     /**
      * @param args the command line arguments
