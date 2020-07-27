@@ -5,6 +5,9 @@
  */
 package os2;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
 /**
  *
  * @author Heitor
@@ -22,9 +25,15 @@ public class UsuarioDAO {
             
         }
         public void Consultar(){
-            
+                Conect  C = new Conect();
+                Connection conn = null;
+                PreparedStatement pstm = null;
+ 
+      //  try {
+              //Cria uma conexão com o banco
+       // conn = C.createConnectionToMySQL();          
+      //  }
         }
-        
         public boolean verificaNome(String nome){
             return true;
         } 
